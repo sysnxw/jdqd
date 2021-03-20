@@ -35,6 +35,7 @@ jobs:
         run: |
           cd  ~/scripts
           npm install
+          node jd_get_share_code.js
           node jd_crazy_joy.js
           node jd_crazy_joy_coin.js
         env:
