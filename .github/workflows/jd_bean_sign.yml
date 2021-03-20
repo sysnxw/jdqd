@@ -49,12 +49,33 @@ jobs:
           node jd_kd.js
           node jd_cash.js
           node jx_sign.js
-          node jd_nh.js
-          node jd_new_shop.js
           node jd_immortal.js
           node jd_jdzz.js
-          node jd_baiTiao.js
           node jd_paopao.js
+          node jd_bookshop.js
+          node jd_daily_egg.js
+          node jd_fruit.js
+          node jdJxncTokens.js
+          node jd_jxnc.js
+          node jd_jdfactory.js
+          node jd_joy.js
+          node jd_joy_feedPets.js
+          node jd_joy_steal.js
+          node jd_live.js
+          node jd_lotteryMachine.js
+          node jd_moneyTree.js
+          node jd_necklace.js
+          node jd_pet.js
+          node jd_family.js
+          node jd_plantBean.js
+          node jd_rankingList.js
+          node jd_redPacket.js
+          node jd_shop.js
+          node jd_small_home.js
+          node jd_speed.js
+          node jd_superMarket.js
+          node jd_syj.js
+          node jd_unsubscribe.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
