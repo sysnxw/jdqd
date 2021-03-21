@@ -15,11 +15,11 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    if: github.event.repository.owner.id == github.event.sender.id
+
     steps:
-      - name: Checkout
-        run: |
-          git clone -b master https://gitlab.com/MrRight/Scripts.git ~/scripts
+      - name: Checkout codes
+        uses: actions/checkout@v2
+              
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
