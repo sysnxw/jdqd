@@ -43,6 +43,7 @@ jobs:
           node jd_get_share_code.js
           node jd_bean_sign.js
           node jd_bean_home.js
+          node jd_blueCoin.js
           node jd_bean_change.js
           node jd_club_lottery.js
           node jd_car.js
@@ -53,7 +54,7 @@ jobs:
           node jd_immortal.js
           node jd_jdzz.js
           node jd_paopao.js
-          node jd_bookshop.js
+          node jd_dreamFactory.js
           node jd_daily_egg.js
           node jd_fruit.js
           node jdJxncTokens.js
@@ -61,6 +62,7 @@ jobs:
           node jd_jdfactory.js
           node jd_joy.js
           node jd_joy_feedPets.js
+          node jd_joy_run.js
           node jd_joy_steal.js
           node jd_live.js
           node jd_lotteryMachine.js
