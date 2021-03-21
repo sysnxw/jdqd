@@ -39,7 +39,8 @@ jobs:
       - name: '运行 【京豆签到类:】'
         run: | #  
           cd ~/scripts
-          npm install 
+          npm install
+          node jd_get_share_code.js
           node jd_bean_sign.js
           node jd_bean_home.js
           node jd_bean_change.js
