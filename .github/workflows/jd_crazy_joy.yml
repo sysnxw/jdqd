@@ -37,6 +37,7 @@ jobs:
 
       - name: '运行 【种豆得豆:】'
         run: |
+          cd ~/scripts
           npm install
           node jd_plantBean.js
         env:
