@@ -6,7 +6,7 @@ name: jd_crazy_joy
 on:
   workflow_dispatch:
   schedule:
-    - cron: '1 18 * * *'
+    - cron: '1 */1 * * *'
   # watch:
   #   types: [started]
   repository_dispatch:
@@ -34,10 +34,10 @@ jobs:
         with:
           path: node_modules
           key: ${{ runner.os }}-${{ env.cache-name }}-${{ hashFiles('package-lock.json') }} # 使用 package-lock.json 的 Hash 作为缓存的 key。也可以使用 package.json 代替
-      - name: '运行 【疯狂的JOY挂机】'
+      - name: '运行 【种豆得豆】'
         run: |
           npm install
-          node jd_crazy_joy_coin.js
+          node jd_plantBean.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
