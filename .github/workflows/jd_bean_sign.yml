@@ -70,7 +70,6 @@ jobs:
           node jd_necklace.js
           node jd_pet.js
           node jd_family.js
-          node jd_plantBean.js
           node jd_rankingList.js
           node jd_redPacket.js
           node jd_shop.js
