@@ -6,7 +6,7 @@ name: 种豆得豆
 on:
   workflow_dispatch:
   schedule:
-    - cron: '2 */1 * * *'
+    - cron: '2 */2 * * *'
   # watch:
   #   types: started
   repository_dispatch:
@@ -39,6 +39,11 @@ jobs:
         run: |
           cd ~/scripts
           npm install
+          node jx_sign.js
+          node jd_dreamFactory.js
+          node jd_daily_egg.js
+          node jd_fruit.js
+          node jd_live.js
           node jd_plantBean.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
