@@ -50,13 +50,9 @@ jobs:
           node jd_car_exchange.js
           node jd_kd.js
           node jd_cash.js
-          node jx_sign.js
           node jd_immortal.js
           node jd_jdzz.js
           node jd_paopao.js
-          node jd_dreamFactory.js
-          node jd_daily_egg.js
-          node jd_fruit.js
           node jdJxncTokens.js
           node jd_jxnc.js
           node jd_jdfactory.js
@@ -64,7 +60,7 @@ jobs:
           node jd_joy_feedPets.js
           node jd_joy_run.js
           node jd_joy_steal.js
-          node jd_live.js
+          
           node jd_lotteryMachine.js
           node jd_moneyTree.js
           node jd_necklace.js
