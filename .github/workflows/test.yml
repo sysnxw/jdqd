@@ -33,9 +33,10 @@ jobs:
           npm install
       - name: 'jxcfdtx'
         run: |
-          sleep 1
-          curl https://raw.githubusercontent.com/ljqailym/jd_scripts/master/lxk0301_live_redrain.js -o lxk0301_live_redrain.js
-          node lxk0301_live_redrain.js
+          #sleep 1
+          #curl https://raw.githubusercontent.com/ljqailym/jd_scripts/master/lxk0301_live_redrain.js -o lxk0301_live_redrain.js
+          #node lxk0301_live_redrain.js
+          node jd_beauty.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_USER_AGENT: ${{ secrets.JD_USER_AGENT }}
