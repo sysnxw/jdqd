@@ -426,7 +426,7 @@ function getIsvToken() {
     headers: {
       'Host': 'api.m.jd.com',
       'accept': '*/*',
-      'user-agent': 'JD4iPhone/167490 (iPhone; iOS 14.2; Scale/3.00)',
+      'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 11; PEGT00 Build/RKQ1.200903.002)',
       'accept-language': 'zh-Hans-JP;q=1, en-JP;q=0.9, zh-Hant-TW;q=0.8, ja-JP;q=0.7, en-US;q=0.6',
       'content-type': 'application/x-www-form-urlencoded',
       'Cookie': cookie
@@ -461,7 +461,7 @@ function getIsvToken2() {
     headers: {
       'Host': 'api.m.jd.com',
       'accept': '*/*',
-      'user-agent': 'JD4iPhone/167490 (iPhone; iOS 14.2; Scale/3.00)',
+      'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 11; PEGT00 Build/RKQ1.200903.002)',
       'accept-language': 'zh-Hans-JP;q=1, en-JP;q=0.9, zh-Hant-TW;q=0.8, ja-JP;q=0.7, en-US;q=0.6',
       'content-type': 'application/x-www-form-urlencoded',
       'Cookie': cookie
