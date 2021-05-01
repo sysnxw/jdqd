@@ -36,7 +36,7 @@ jobs:
           #sleep 1
           #curl https://raw.githubusercontent.com/ljqailym/jd_scripts/master/lxk0301_live_redrain.js -o lxk0301_live_redrain.js
           #node lxk0301_live_redrain.js
-          node jd_beauty.js
+          node jd_unsubscribe.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_USER_AGENT: ${{ secrets.JD_USER_AGENT }}
@@ -51,4 +51,5 @@ jobs:
           DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
           DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
           IGOT_PUSH_KEY: ${{ secrets.IGOT_PUSH_KEY }}
+          UN_SUBSCRIBES: ${{ secrets.UNSUBSCRIBE }}
 
