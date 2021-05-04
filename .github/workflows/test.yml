@@ -36,7 +36,7 @@ jobs:
           #sleep 1
           #curl https://raw.githubusercontent.com/ljqailym/jd_scripts/master/lxk0301_live_redrain.js -o lxk0301_live_redrain.js
           #node lxk0301_live_redrain.js
-          node jd_wechat_sign.js
+          node jd_beauty.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           CookiesJD: ${{ secrets.CookiesJD }}
