@@ -92,7 +92,7 @@ async function mr() {
   const WebSocket = require('ws')
   let client = new WebSocket(`wss://xinruimz-isv.isvjcloud.com/wss/?token=${$.token}`,null,{
     headers:{
-      'user-agent': process.env.JD_USER_AGENT ? process.env.JD_USER_AGENT : "Dalvik/2.1.0 (Linux; U; Android 11; TAS-AN00 Build/TAS-AN00)",
+      'user-agent': "Dalvik/2.1.0 (Linux; U; Android 11; TAS-AN00 Build/TAS-AN00)",
     }
   })
   console.log(`wss://xinruimz-isv.isvjcloud.com/wss/?token=${$.token}`)
