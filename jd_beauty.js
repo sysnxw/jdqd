@@ -90,9 +90,20 @@ async function mr() {
   $.helpInfo = []
   $.needs = []
   const WebSocket = require('ws')
-  let client = new WebSocket(`wss://xinruimz-isv.isvjcloud.com/wss/?token=${$.token}`,null,{
+  let client = new WebSocket(`wss://xinruimz-isv.isvjcloud.com:443/wss/?token=${$.token}`,null,{
     headers:{
-      'user-agent': "Dalvik/2.1.0 (Linux; U; Android 11; TAS-AN00 Build/TAS-AN00)",
+      'Host': "xinruimz-isv.isvjcloud.com",
+      'Connection': "Upgrade",
+      'Pragma': "no-cache",
+      'Cache-Control': "no-cache",
+      'user-agent':"jdapp;android;9.5.2;7.1.2;3353830323230323-13932373530363D2;network/wifi;model/MI 9;addressid/0;aid/4e0314ac734f6d32;oaid/;osVer/25;appBuild/87971;partner/jdtopc;eufv/1;jdSupportDarkMode/0;Mozilla/5.0 (Linux; Android 7.1.2; MI 9 Build/N2G47O; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.70 Mobile Safari/537.36",
+      'Upgrade': "websocket",
+    'Origin': "https://xinruimz-isv.isvjcloud.com",
+    'Sec-WebSocket-Version': "13",
+    'Accept-Encoding': "gzip, deflate",
+    'Accept-Language': "zh-CN,en-US;q\u003d0.9",
+    'Cookie': "__jdc\u003d60969652; IsvToken\u003dAAFgkfsCADA3N9Ra-LHKpKsdB0JUl91W6hJo4R1pMsirJbWNrrfdPLzMOSYSzKxtYoyjEPaaHWA; jd-beauty-institute\u003deyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6OTUwMlwvYXBpXC9hdXRoIiwiaWF0IjoxNjIwMTc5NzE0LCJleHAiOjE2MjAyMjI5MTQsIm5iZiI6MTYyMDE3OTcxNCwianRpIjoidk1xYTNya2tsejRzN0FnZiIsInN1YiI6MTkzNzA3MiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.9vDzsRK3a3-YvRyaxezxjDwNsV5kdGfv10A7qqgKqbE; __jd_ref_cls\u003dMnpm_ComponentApplied; jcloud_alb_route\u003d5d824617971e2c9fae35b183ee17a677; __jda\u003d60969652.1620108749427883793853.1620108749.1620191432.1620199300.3; __jdb\u003d60969652.1.1620108749427883793853|3.1620199300; __jdv\u003d60969652%7Cdirect%7C-%7Cnone%7C-%7C1620199300897; mba_sid\u003d12.14; pre_session\u003dfHz7DPulY8d4qCeEVPGjkIIGNiSYnEnO|53; pre_seq\u003d13; mba_muid\u003d1620108749427883793853.12.1620199301043",
+    'X-Requested-With': "com.jingdong.app.mall",
     }
   })
   console.log(`wss://xinruimz-isv.isvjcloud.com/wss/?token=${$.token}`)
