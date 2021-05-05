@@ -31,7 +31,6 @@ jobs:
       - name: npm install
         run: |
           npm install
-          npm install nodejs-websocket
       - name: 'jxcfdtx'
         run: |
           #sleep 1
