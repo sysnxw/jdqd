@@ -15,8 +15,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-        with:
-          repository: wulove/jdaction
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
@@ -33,7 +31,7 @@ jobs:
           npm install
       - name: '运行【hundun】'
         run: |
-          python3 wait.py 23:59:59.999
+          python3 wait_hour.py 0 10
       - name: '运行 【测试】'
         run: |
           node hundun/jd_zjd_tuan.js
@@ -42,6 +40,7 @@ jobs:
           node hundun/jx_nc.js
           node hundun/dd_factory.js
           node hundun/jx_factory.js
+          node hundun/jx_factory_component.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
