@@ -36,7 +36,7 @@ jobs:
         run: |
           node hundun/jd_zjd_tuan.js
           node hundun/jdzz.js
-          node hundun/ddxw.js
+          #node hundun/ddxw.js
           node hundun/jx_nc.js
           node hundun/dd_factory.js
           node hundun/jx_factory.js
