@@ -40,7 +40,7 @@ jobs:
           node hundun/jx_nc.js
           node hundun/dd_factory.js
           node hundun/jx_factory.js
-          node hundun/jx_factory_component.js
+          #node hundun/jx_factory_component.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
