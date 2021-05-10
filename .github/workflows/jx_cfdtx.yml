@@ -40,11 +40,10 @@ jobs:
             python3 wait.py 23:59:59.990
       - name: 'jxcfdtx'
         run: |
+          node jx_cfdtx.js
           sleep 1
           node jx_cfdtx.js
-          sleep 3
-          node jx_cfdtx.js
-          sleep 3
+          sleep 1
           node jx_cfdtx.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE_CFD }}
